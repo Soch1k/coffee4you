@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Official Coffee4You Site</title>
+    <!-- Link to font -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    <!-- Link to google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="top"></div>
+    <header id="home">
+        <div class="container header-container">
+            <a href="#top" class="logo" aria-label="Coffee4You - на головну">
+                <i class="fa-solid fa-mug-saucer logo-icon"></i>
+                <div class="logo-text">Coffee<span>4You</span></div>
+            </a>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#top" data-key="nav_home">Головна</a></li>
+                    <li><a href="#menu" data-key="nav_menu">Меню</a></li>
+                    <li><a href="#about" data-key="nav_about">Про нас</a></li>
+                    <li><a href="#contact" data-key="nav_contact">Контакти</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-buttons">
+                <div class="desktop-auth desktop-only">
+                    <a href="#" class="btn btn-secondary" id="login-button" data-key="btn_login">Увійти</a>
+                    <a href="#" class="btn btn-primary" id="register-button" data-key="btn_register">Реєстрація</a>
+                </div>
+
+                <div id="user-profile" style="display: none; cursor: pointer;" aria-label="Профіль користувача">
+                    <i class="fa-solid fa-circle-user"></i>
+                </div>
+
+                <div class="mobile-auth-trigger mobile-only" id="mobile-auth-trigger" aria-label="Авторизація">
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                </div>
+
+                <div class="cart-wrapper">
+                    <a href="#" class="cart-icon" id="cart-button" aria-label="Кошик">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+        
+    <!--  Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-subtitle" data-key="hero_subtitle">
+                    <i class="fa-solid fa-seedling"></i>
+                    Зерна, виплекані з любов'ю до природи
+                </div>
+                <h1 class="hero-title">Coffee4You <br><span data-key="hero_span">Точність у кожному проливі</span></h1>
+                
+                <div class="hero-text">
+                    <p data-key="hero_desc">Ми створили місце, де неонове світло зустрічається з ароматом свіжообсмажених зерен. Тут немає нічого зайвого — тільки ти, твоя улюблена кава та затишок, що надихає. Наша місія проста: робити якісну каву доступною для кожного, хто цінує справжній смак.</p>
+                    <br>
+                    <div class="why-us">
+                        <span class="highlight" data-key="why_us_title">✨ Чому ми?</span><br>
+                        <span data-key="why_us_1">• Тільки добірне зерно.</span><br>
+                        <span data-key="why_us_2">• Атмосфера, в яку хочеться повертатися.</span><br>
+                        <span data-key="why_us_3">• Кава, зроблена саме для тебе.</span>
+                    </div>
+                    
+                    <p class="welcome-text" data-key="welcome_text">Чекаємо на твій візит!</p>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary" data-key="hero_btn_1">Наші купажі</a>
+                    <a href="#contact" class="btn btn-secondary" data-key="hero_btn_2">Завітати до нас</a>
+                </div>
+            </div>
+
+            <div class="image-wrapper">
+                <img src="4.png" alt="Coffee4You" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu-->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle" data-key="menu_subtitle">Наші пропозиції</div>
+                <h2 class="section-title" data-key="menu_title">Кожен ковток — історія, кожен шматочок — насолода.</h2>
+                <p class="section-desc" data-key="menu_desc">Відкрийте для себе наші фірмові суміші</p>
+            </div>
+
+            <div id="categories-display" class="sb-premium-list">
+    
+                <div class="sb-item-card bg-coffee" data-category="coffee">
+                    <div class="sb-item-img">
+                        <img src="21.png" alt="Coffee">
+                    </div>
+                    <div class="sb-item-text">
+                        <h3 class="sb-title" data-key="category_coffee_title">Авторська кава</h3>
+                        <p class="sb-desc" data-key="category_coffee_desc">Від класичного еспресо до авторських напоїв на основі добірних зерен арабіки.</p>
+                        <div class="sb-btn-more">
+                            <span class="sb-link-text" data-key="btn_open_menu">Відкрити меню</span>
+                            <div class="sb-accent-line"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sb-item-card bg-tea" data-category="tea">
+                    <div class="sb-item-text">
+                        <h3 class="sb-title" data-key="category_tea_title">Чай & Матча</h3>
+                        <p class="sb-desc" data-key="category_tea_desc">Церемоніальна матча та ароматні купажі листового чаю для вашої гармонії.</p>
+                        <div class="sb-btn-more">
+                            <span class="sb-link-text" data-key="btn_open_menu">Відкрити меню</span>
+                            <div class="sb-accent-line"></div>
+                        </div>
+                    </div>
+                    <div class="sb-item-img">
+                        <img src="22.png" alt="Tea">
+                    </div>
+                </div>
+
+                <div class="sb-item-card bg-pastry" data-category="pastry">
+                    <div class="sb-item-img">
+                        <img src="23.png" alt="Pastry">
+                    </div>
+                    <div class="sb-item-text">
+                        <h3 class="sb-title" data-key="category_bakery_title">Свіжа крафтова випічка</h3>
+                        <p class="sb-desc" data-key="category_bakery_desc">Свіжоспечені круасани та десерти, що ідеально доповнюють вашу каву.</p>
+                        <div class="sb-btn-more">
+                            <span class="sb-link-text" data-key="btn_open_menu">Відкрити меню</span>
+                            <div class="sb-accent-line"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="products-display" style="display: none;">
+                <div class="back-btn-wrapper">
+                    <button id="btn-back" class="gold-btn center-btn">
+                        <i class="fa-solid fa-arrow-left"></i> 
+                        <span data-key="btn_back_to_categories">Назад до категорій</span>
+                    </button>
+                </div>
+
+            <div class="menu-grid">
+                <div class="menu-card" data-category= "coffee">
+                    <div class="menu-img">
+                        <img src="2.png" alt="Velvet Cloud Cappuccino">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-tag tag-bestseller" data-key="tag_bestseller">ХІТ ПРОДАЖІВ</div>
+                        <h3 class="menu-title">Velvet Cloud Cappuccino</h3>
+                        <p class="menu-desc" data-key="desc_cappuccino">Відчуйте справжню невагомість з кожним ковтком. Наш Velvet Cloud Cappuccino — це симфонія ніжності...</p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">85₴</div>
+                                <div class="product-controls" data-id="cappuccino">
+                                    <button class="btn-add-to-cart" data-id="cappuccino" data-name="Velvet Cloud Cappuccino" data-price="85">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="cappuccino"><i class="fa-solid fa-minus"></i></button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="cappuccino"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category= "coffee">
+                    <div class="menu-img">
+                        <img src="3.png" alt="Black Diamond Espresso">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-title">Black Diamond Espresso</h3>
+                        <p class="menu-desc" data-key="desc_espresso">Чорний Алмаз — це концентрована енергія у твоїй чашці. Ми використовуємо зерна темного обсмажування з високогір’їв Гватемали, які дарують напою густу текстуру та насичений профіль з нотками гіркого шоколаду та обвугленого дерева. Особливість цього еспресо — у його фінальному штриху: ми додаємо краплю активованого вугілля для досягнення магічного глибокого чорного кольору та прикрашаємо поверхню кристалом льодяникового цукру, що сяє, наче справжній діамант.</p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">80₴</div>
+                                <div class="product-controls" data-id="espresso">
+                                    <button class="btn-add-to-cart" data-id="espresso" data-name="Black Diamond Espresso" data-price="80">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="espresso"><i class="fa-solid fa-minus"></i></button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="espresso"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category= "coffee">
+                    <div class="menu-img">
+                        <img src="1.png" alt="Golden Amber Latte">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-title">Golden Amber Latte</h3>
+                        <p class="menu-desc" data-key="desc_latte">Це більше, ніж просто напій, це досвід. Ми поєднали оксамитовий подвійний еспресо з нашої власної суміші зерна та ніжне вівсяне молоко, збите до стану хмаринки. Справжня магія криється в секретному інгредієнті: крафтовому сиропі на основі копченої карамелі та дрібці харчового золота, що мерехтить у кожному ковтку. Завершує композицію легкий пил цейлонської кориці.</p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">90₴</div>
+                                <div class="product-controls" data-id="latte">
+                                    <button class="btn-add-to-cart" 
+                                            data-id="latte" 
+                                            data-name="Golden Amber Latte" 
+                                            data-price="90">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="latte"><i class="fa-solid fa-minus"></i></button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="latte"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category= "coffee">
+                    <div class="menu-img">
+                        <img src="5.png" alt="Lavender Raf">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-title" data-key="title_lavender_raf">Lavender Raf</h3>
+                        <p class="menu-desc" data-key="desc_lavender_raf">
+                            Лавандовий Раф — це ніжний шепіт прованських полів у вашій чашці. Ми створили цей напій для тих, хто цінує спокій та витонченість. Секрет криється в особливому поєднанні густих вершків, подвійного еспресо та натурального лавандового цукру. Напій вінчає повітряна пінка відтінку вечірнього неба, прикрашена тендітною гілочкою сухоцвіту лаванди. Кожен ковток — це м'яка подорож у світ гармонії та квіткового аромату.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">95₴</div>
+                                <div class="product-controls" data-id="lavender_raf">
+                                    <button class="btn-add-to-cart" 
+                                            data-id="lavender_raf" 
+                                            data-name="Lavender Raf" 
+                                            data-price="95">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="lavender_raf"><i class="fa-solid fa-minus"></i></button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="lavender_raf"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="menu-card" data-category= "coffee">
+                    <div class="menu-img">
+                        <img src="6.png" alt="Emerald Pistachio Latte">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-title" data-key="title_pistachio_latte">Emerald Pistachio Latte</h3>
+                        <p class="menu-desc" data-key="desc_pistachio_latte">
+                            Фісташковий Лате — справжній ювелірний виріб серед кавових напоїв. У основі лежить оксамитовий лате, доповнений авторською пастою з добірних фісташок, що надає напою шляхетного смаку з легким горіховим відтінком. Поверхня вкрита глянцевою пінкою, щедро присипаною подрібненим смарагдовим горіхом. Це вибір для справжніх гурманів, які шукають ідеальний баланс між солодкістю та насиченістю.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">105₴</div>
+                                <div class="product-controls" data-id="pistachio_latte">
+                                    <button class="btn-add-to-cart" 
+                                            data-id="pistachio_latte" 
+                                            data-name="Emerald Pistachio Latte" 
+                                            data-price="105">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="pistachio_latte"><i class="fa-solid fa-minus"></i></button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="pistachio_latte"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category= "coffee">
+                    <div class="menu-img">
+                        <img src="7.png" alt="Caramel Macchiato Gold">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-title" data-key="title_caramel_macchiato">Caramel Macchiato Gold</h3>
+                        <p class="menu-desc" data-key="desc_caramel_macchiato">
+                            Карамельний Мак'ято — це солодка архітектура смаку. Чіткі шари гарячого молока та міцного еспресо створюють бездоганний візуальний ефект, а густа сіточка з крафтової карамелі зверху додає напою фінального солодкого штриха. Ми додали дрібку морської солі до карамелі, щоб підкреслити глибину кавового тіла та створити незабутній контраст, від якого неможливо відірватися.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">90₴</div>
+                                <div class="product-controls" data-id="caramel_macchiato">
+                                    <button class="btn-add-to-cart" 
+                                            data-id="caramel_macchiato" 
+                                            data-name="Caramel Macchiato Gold" 
+                                            data-price="90">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="caramel_macchiato"><i class="fa-solid fa-minus"></i></button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="caramel_macchiato"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category= "coffee">
+                    <div class="menu-img">
+                        <img src="8.png" alt="Spiced Orange Cold Brew">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-title" data-key="title_spiced_cold_brew">Spiced Orange Cold Brew</h3>
+                        <p class="menu-desc" data-key="desc_spiced_cold_brew">
+                            Цитрусовий Колд Брю — енергія холодного ранку, витримана протягом 12 годин. Цей напій готується методом повільної екстракції, що розкриває справжню душу кавового зерна без жодної гіркоти. Ми додали до нього ефірні олії свіжої помаранчевої цедри та легку пряність кориці. Подається з льодом у скляній пляшці, зберігаючи кожну нотку прохолоди та свіжості для вашого ідеального дня.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">85₴</div>
+                                <div class="product-controls" data-id="spiced_cold_brew">
+                                    <button class="btn-add-to-cart" 
+                                            data-id="spiced_cold_brew" 
+                                            data-name="Spiced Orange Cold Brew" 
+                                            data-price="85">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="spiced_cold_brew"><i class="fa-solid fa-minus"></i></button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="spiced_cold_brew"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category= "coffee">
+                    <div class="menu-img">
+                        <img src="9.png" alt="Turkish Night Delight">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-tag tag-new" data-key="tag_new">НОВИНКА</div>
+                        <h3 class="menu-title" data-key="title_turkish_night">Turkish Night Delight</h3>
+                        <p class="menu-desc" data-key="desc_turkish_night">
+                            Кава по-східному — магія традицій, втілена в металі та піску. Цей напій готується за старовинним рецептом у мідній джезві, що дозволяє отримати неймовірно щільну та стійку пінку. Глибокий, майже містичний аромат спецій — кардамону та бадьяну — наповнює кожен ковток східною казкою. Подається з шматочком автентичного рахат-лукуму, щоб ви могли відчути справжню гостинність Сходу.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">75₴</div>
+                                <div class="product-controls" data-id="turkish_night">
+                                    <button class="btn-add-to-cart" 
+                                            data-id="turkish_night" 
+                                            data-name="Turkish Night Delight" 
+                                            data-price="75">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="turkish_night"><i class="fa-solid fa-minus"></i></button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="turkish_night"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category= "coffee">
+                    <div class="menu-img">
+                        <img src="10.png" alt="Rosemary Honey Latte">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-title" data-key="title_rosemary_latte">Rosemary Honey Latte</h3>
+                        <p class="menu-desc" data-key="desc_rosemary_latte">
+                            Розмариновий Медовий Лате — це несподіване, але гармонійне поєднання солодкого та трав'яного. Цей напій розкриває всю ніжність класичного лате, доповненого легким квітковим медом та витонченою ноткою розмарину. Авторський сироп на основі свіжого розмарину надає йому особливої свіжості та глибини. Напій прикрашений пишною молочною пінкою та ніжною гілочкою ароматного розмарину, що запрошує вас до насолоди. Ідеальний вибір для тих, хто шукає нових смакових вражень.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">90₴</div>
+                                <div class="product-controls" data-id="rosemary_latte">
+                                    <button class="btn-add-to-cart" 
+                                            data-id="rosemary_latte" 
+                                            data-name="Rosemary Honey Latte" 
+                                            data-price="90">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="rosemary_latte"><i class="fa-solid fa-minus"></i></button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="rosemary_latte"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category= "coffee">
+                    <div class="menu-img">
+                        <img src="11.png" alt="Smoked Cardamom Americano">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-tag tag-new" data-key="tag_new">НОВИНКА</div>
+                        <h3 class="menu-title" data-key="title_smoked_americano">Smoked Cardamom Americano</h3>
+                        <p class="menu-desc" data-key="desc_smoked_americano">
+                            Копчений Кардамоновий Амерікано — це брутальний і водночас витончений напій для справжніх поціновувачів кави. Ми використовуємо спеціально обсмажені зерна, які надають каві легкого димного аромату, що ідеально поєднується з теплими, пряними нотками зеленого кардамону. Цей Амерікано готується класичним способом, зберігаючи насиченість та чистоту смаку, але доповнюється неповторним післясмаком.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">70₴</div>
+                                <div class="product-controls" data-id="smoked_americano">
+                                    <button class="btn-add-to-cart" 
+                                            data-id="smoked_americano" 
+                                            data-name="Smoked Cardamom Americano" 
+                                            data-price="70">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="smoked_americano"><i class="fa-solid fa-minus"></i></button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="smoked_americano"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category= "coffee">
+                    <div class="menu-img">
+                        <img src="12.png" alt="Rosewater & Pistachio Cold Foam Cold Brew">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-tag tag-new" data-key="tag_new">НОВИНКА</div>
+                        <h3 class="menu-title" data-key="title_rose_pistachio">Rosewater & Pistachio Cold Foam</h3>
+                        <p class="menu-desc" data-key="desc_rose_pistachio">
+                            Колд Брю з Рожевою Водою та Фісташковою Піною — це розкішне поєднання Сходу та сучасності. Основою є наш фірмовий Колд Брю, який повільно екстрагується для отримання неймовірно м'якого смаку. Зверху напій увінчаний повітряною та шовковистою піною, збагаченою натуральною рожевою водою та ніжним фісташковим пюре.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">95₴</div>
+                                <div class="product-controls" data-id="rose_pistachio">
+                                    <button class="btn-add-to-cart" 
+                                            data-id="rose_pistachio" 
+                                            data-name="Rosewater & Pistachio Cold Foam" 
+                                            data-price="95">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="rose_pistachio"><i class="fa-solid fa-minus"></i></button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="rose_pistachio"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-filters" id="tea-subfilters" style="display: none;">
+                    <button class="sub-filter-btn" data-subfilter="all">Все меню</button>
+                    <button class="sub-filter-btn" data-subfilter="tea-only">Авторський чай</button>
+                    <button class="sub-filter-btn" data-subfilter="matcha-only">Церемоніальна матча</button>
+                </div>
+
+
+
+                <div class="menu-card tea-only" data-category="tea">
+                    <div class="menu-img">
+                        <img src="24.png" alt="Liquid Mica Tea">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-title">Liquid Mica</h3>
+                        <p class="menu-desc" data-key="desc_liquid_mica">
+                            Ультрасвітлий білий чай, зібраний до першої роси, що проходить крізь фільтрацію сріблом. Ми додаємо екстракт білої смородини для прозорої кислинки та дрібні фракції харчового перламутру. Напій переливається в чашці холодним металевим блиском, нагадуючи розплавлене срібло, а на поверхні плаває одна ідеально біла пелюстка жасмину.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">95₴</div>
+                                <div class="product-controls" data-id="liquid_mica">
+                                    <button class="btn-add-to-cart" data-id="liquid_mica" data-name="Liquid Mica Tea" data-price="95">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="liquid_mica"><i class="fa-solid fa-minus"></i></button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="liquid_mica"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card matcha-only" data-category="tea">
+                    <div class="menu-img">
+                        <img src="26.png" alt="Jade Abyss Matcha">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-title">Jade Abyss</h3>
+                        <p class="menu-desc" data-key="desc_jade_abyss">
+                            Концентрат пресованої матчі вищого сорту з сиропом із соснових шишок. Напій кольору лісового моху з текстурою лікеру. Поверхня вкрита бамбуковим вугіллям, що створює ефект оксамитової темряви, крізь яку пробивається яскраво-зелена серцевина.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">100₴</div>
+                                <div class="product-controls" data-id="jade_abyss">
+                                    <button class="btn-add-to-cart" data-id="jade_abyss" data-name="Jade Abyss" data-price="100">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="jade_abyss"><i class="fa-solid fa-minus"></i></button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="jade_abyss"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card tea-only" data-category="tea">
+                    <div class="menu-img">
+                        <img src="25.png" alt="Frozen Magma Tea">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-title">Frozen Magma</h3>
+                        <p class="menu-desc" data-key="desc_frozen_magma">
+                            Копчений червоний чай Сяо Чжун, витриманий над вогнем з вишневих дров. Глибокий теракотовий колір з маслянистим відблиском. У центрі — сфера з карамелізованого цукру з чилі, яка при розчиненні перетворює напій на густий потік розпеченої лави з пікантним характером.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">105₴</div>
+                                <div class="product-controls" data-id="frozen_magma">
+                                    <button class="btn-add-to-cart" data-id="frozen_magma" data-name="Frozen Magma" data-price="105">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="frozen_magma"><i class="fa-solid fa-minus"></i></button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="frozen_magma"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+                <div class="menu-card tea-only" data-category="tea">
+                    <div class="menu-img">
+                        <img src="28.png" alt="Violet Kerosene Tea">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-tag tag-bestseller" data-key="tag_bestseller">ХІТ ПРОДАЖІВ</div>
+                        <h3 class="menu-title">Violet Kerosene</h3>
+                        <p class="menu-desc" data-key="desc_violet_kerosene">
+                            Трав’яний збір із квітів анчану та дикої м’яти на кислотній основі лайма для отримання яскравого фіолетового кольору. Екстракт евкаліпта додає напою холодного аромату, а чорна глянцева рамка з обпаленого цукру створює драматичний контраст із неоновим серцем напою.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">125₴</div>
+                                <div class="product-controls" data-id="violet_kerosene">
+                                    <button class="btn-add-to-cart" data-id="violet_kerosene" data-name="Violet Kerosene" data-price="125">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="violet_kerosene"><i class="fa-solid fa-minus"></i></button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="violet_kerosene"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-card matcha-only" data-category="tea">
+                    <div class="menu-img">
+                        <img src="27.png" alt="Copper Tide Tea">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-tag tag-new" data-key="tag_new">НОВИНКА</div>
+                        <h3 class="menu-title">Copper Tide</h3>
+                        <p class="menu-desc" data-key="desc_copper_tide">
+                            Міцний асам, настояний на обвугленій паличці кориці та цедрі червоного апельсина. Насичений мідний колір з іржавим відтінком доповнюється солоною карамеллю, що створює на поверхні ефектні розводи, схожі на вечірні відблиски на воді, присипані мускатним горіхом.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">115₴</div>
+                                <div class="product-controls" data-id="copper_tide">
+                                    <button class="btn-add-to-cart" data-id="copper_tide" data-name="Copper Tide" data-price="115">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="copper_tide"><i class="fa-solid fa-minus"></i></button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="copper_tide"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card tea-only" data-category="tea">
+                    <div class="menu-img">
+                        <img src="29.png" alt="Velvet Sakura">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-tag tag-new" data-key="tag_new">НОВИНКА</div>
+                        <h3 class="menu-title">Velvet Sakura</h3>
+                        <p class="menu-desc" data-key="desc_velvet_sakura">
+                            Ніжний мікс малини та пелюсток троянди, збитий у повітряну рожеву піну. Напій доповнений пудрою ягід годжі та подається з гілочкою зацукрованої вишні. Ідеальний баланс весняної свіжості та ягідної солодкості.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">125₴</div> <div class="product-controls" data-id="velvet_sakura">
+                                    <button class="btn-add-to-cart" data-id="velvet_sakura" data-name="Velvet Sakura" data-price="125">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="velvet_sakura"><i class="fa-solid fa-minus"></i></button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="velvet_sakura"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card tea-only" data-category="tea">
+                    <div class="menu-img">
+                        <img src="30.png" alt="Mercury Cloud Tea">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-tag tag-new" data-key="tag_new">НОВИНКА</div>
+                        <h3 class="menu-title">Mercury Cloud</h3>
+                        <p class="menu-desc" data-key="desc_mercury_cloud">
+                            Молочний улун, збитий у щільну холодну піну з кокосовим вугіллям, що нагадує грозову хмару. Поверхня вкрита їстівним срібним напиленням, створюючи ефект металевого дзеркала, яке розбивається при першому ковтку, відкриваючи ніжну вершкову основу.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">155₴</div>
+                                <div class="product-controls" data-id="mercury_cloud">
+                                    <button class="btn-add-to-cart" data-id="mercury_cloud" data-name="Mercury Cloud" data-price="155">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="mercury_cloud"><i class="fa-solid fa-minus"></i></button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="mercury_cloud"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card tea-only" data-category="tea">
+                    <div class="menu-img">
+                        <img src="31.png" alt="Ruby Opium Tea">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-title">Ruby Opium</h3>
+                        <p class="menu-desc" data-key="desc_ruby_opium">
+                            Сироп із каркаде, екстракт дамаської троянди та гранатовий сік створюють агресивний винний відтінок. На дні спочиває масивний кристал льодяникового цукру, що сяє зсередини чашки, наче живе рубінове серце. Напій з глибоким смаком та містичною візуалізацією.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">140₴</div>
+                                <div class="product-controls" data-id="ruby_opium">
+                                    <button class="btn-add-to-cart" data-id="ruby_opium" data-name="Ruby Opium" data-price="140">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="ruby_opium"><i class="fa-solid fa-minus"></i></button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="ruby_opium"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card tea-only" data-category="tea">
+                    <div class="menu-img">
+                        <img src="32.png" alt="Golden Resin Tea">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-title">Golden Resin</h3>
+                        <p class="menu-desc" data-key="desc_golden_resin">
+                            Густий навар із гречаного чаю та дикого меду кольору паленого золота. Напій прикрашений ванільною паличкою в золотій поталі та квітковим пилком, що створює на поверхні ефект сонячного пилу в променях старого замку. Теплий, обволікаючий смак із нотками печива та меду.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">160₴</div>
+                                <div class="product-controls" data-id="golden_resin">
+                                    <button class="btn-add-to-cart" data-id="golden_resin" data-name="Golden Resin" data-price="160">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="golden_resin"><i class="fa-solid fa-minus"></i></button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="golden_resin"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card tea-only" data-category="tea">
+                    <div class="menu-img">
+                        <img src="33.png" alt="Sakura Ash Tea">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-title">Sakura Ash</h3>
+                        <p class="menu-desc" data-key="desc_sakura_ash">
+                            Зелений чай із квітами вишні, припорошений попелом із меленої чорної смородини. Блідо-рожевий напій, вкритий шаром сіро-чорного пилу, створює ефект згарища в саду. При перемішуванні попіл розчиняється, перетворюючи чай на глибокий темний пурпур.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">150₴</div>
+                                <div class="product-controls" data-id="sakura_ash">
+                                    <button class="btn-add-to-cart" data-id="sakura_ash" data-name="Sakura Ash" data-price="150">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="sakura_ash"><i class="fa-solid fa-minus"></i></button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="sakura_ash"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card matcha-only" data-category="tea">
+                    <div class="menu-img">
+                        <img src="34.png" alt="Jade Cloud Matcha">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-title">Jade Cloud</h3>
+                        <p class="menu-desc" data-key="desc_jade_cloud">
+                            Класична церемоніальна матча, збита у густу молочну піну. Завдяки високому вмісту амінокислот, напій має природний солодкуватий присмак без цукру. Поверхня прикрашена мінімалістичною спіраллю з чистого порошку матчі, що символізує гармонію та спокій.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">130₴</div>
+                                <div class="product-controls" data-id="jade_cloud">
+                                    <button class="btn-add-to-cart" data-id="jade_cloud" data-name="Jade Cloud" data-price="130">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="jade_cloud"><i class="fa-solid fa-minus"></i></button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="jade_cloud"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card matcha-only" data-category="tea">
+                    <div class="menu-img">
+                        <img src="35.png" alt="Emerald Lava Matcha">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-title">Emerald Lava</h3>
+                        <p class="menu-desc" data-key="desc_emerald_lava">
+                            Багатошаровий напій із контрастом температур та кольорів. На дні — густе холодне рослинне молоко, зверху — шар гарячої концентрованої матчі, що повільно стікає вниз, наче смарагдова лава. Подається з двома паличками хрусткого японського печива 'Pocky'.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">145₴</div>
+                                <div class="product-controls" data-id="emerald_lava">
+                                    <button class="btn-add-to-cart" data-id="emerald_lava" data-name="Emerald Lava" data-price="145">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="emerald_lava"><i class="fa-solid fa-minus"></i></button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="emerald_lava"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="bakery-subfilters" class="sub-filters" style="display: none;">
+                    <button class="sub-filter-btn active" data-subfilter="all">Вся випічка</button>
+                    <button class="sub-filter-btn" data-subfilter="no-filling">Без начинки</button>
+                    <button class="sub-filter-btn" data-subfilter="with-filling">З начинкою</button>
+                </div>
+
+                <div class="menu-card no-filling" data-category="pastry">
+                    <div class="menu-img">
+                        <img src="36.png" alt="Coal node">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-title" data-key="bakery_knot_name">Coal node</h3>
+                        <p class="menu-desc" data-key="bakery_knot_desc">
+                            Це маніфест мінімалізму. Ми використовуємо ферментоване протягом 48 годин тісто з додаванням натурального бамбукового вугілля. Результат — глибокий матовий чорний колір, хрустка попеляста скоринка та неймовірно повітряний м’якуш. Зверху ми посипаємо вузол великими кристалами морської солі Maldon, що сяють, як зірки на нічному небі.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">115₴</div>
+                                <div class="product-controls" data-id="bakery_charcoal_knot">
+                                    <button class="btn-add-to-cart" 
+                                            data-id="bakery_charcoal_knot" 
+                                            data-name="Coal node" 
+                                            data-price="115">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="bakery_charcoal_knot">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="bakery_charcoal_knot">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card no-filling" data-category="pastry">
+                    <div class="menu-img">
+                        <img src="37.png" alt="Saffron Spiral">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-title" data-key="bakery_saffron_spiral_name">Saffron Spiral</h3>
+                        <p class="menu-desc" data-key="bakery_saffron_spiral_desc">
+                            Листкове тісто, просочене маслом, настояним на іранському шафрані. Інтенсивний золотий колір та ледь вловимий пряний аромат. Спіраль випечена до "скляної" скоринки, яка розсипається від дотику, оголюючи волокнисту сонячну серцевину.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">125₴</div>
+                                <div class="product-controls" data-id="bakery_saffron_spiral">
+                                    <button class="btn-add-to-cart" 
+                                            data-id="bakery_saffron_spiral" 
+                                            data-name="Saffron Spiral" 
+                                            data-price="125">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="bakery_saffron_spiral">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="bakery_saffron_spiral">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card no-filling" data-category="pastry">
+                    <div class="menu-img">
+                        <img src="38.png" alt="Smoked Rye Ear">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-title" data-key="bakery_rye_ear_name">Smoked Rye Ear</h3>
+                        <p class="menu-desc" data-key="bakery_rye_ear_desc">
+                            Груба випічка з житнього борошна та солоду, обкурена димом вільхи. Поверхня вкрита густим шаром смаженого чорного кунжуту та кмину. Це агресивна, майже первісна текстура з ароматом багаття та дикого поля.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">105₴</div>
+                                <div class="product-controls" data-id="bakery_rye_ear">
+                                    <button class="btn-add-to-cart" 
+                                            data-id="bakery_rye_ear" 
+                                            data-name="Smoked Rye Ear" 
+                                            data-price="105">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="bakery_rye_ear">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="bakery_rye_ear">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card with-filling" data-category="pastry">
+                    <div class="menu-img">
+                        <img src="39.png" alt="Quartz Rose">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-title" data-key="bakery_quartz_rose_name">Quartz Rose</h3>
+                        <p class="menu-desc" data-key="bakery_quartz_rose_desc">
+                            Круасан у формі бутона з кремом із рожевої води та лічі. Серцевина — малинове конфі, що виглядає як рідкий рубін при розрізі. Зверху вкритий глазур'ю, застиглою у формі гострих кристалів рожевого кварцу.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">165₴</div>
+                                <div class="product-controls" data-id="bakery_quartz_rose">
+                                    <button class="btn-add-to-cart" 
+                                            data-id="bakery_quartz_rose" 
+                                            data-name="Quartz Rose" 
+                                            data-price="165">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="bakery_quartz_rose">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="bakery_quartz_rose">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card with-filling" data-category="pastry">
+                    <div class="menu-img">
+                        <img src="40.png" alt="Obsidian Capsule">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-title" data-key="bakery_obsidian_capsule_name">Obsidian Capsule</h3>
+                        <p class="menu-desc" data-key="bakery_obsidian_capsule_desc">
+                            Булочка, вкрита чорною "землею" з дегідрованих маслин. Всередині — рідка начинка з темного шоколаду (80%) та пасти місо. При розрізі витікає густа, солоно-солодка шоколадна "лава".
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">155₴</div>
+                                <div class="product-controls" data-id="bakery_obsidian_capsule">
+                                    <button class="btn-add-to-cart" 
+                                            data-id="bakery_obsidian_capsule" 
+                                            data-name="Obsidian Capsule" 
+                                            data-price="155">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="bakery_obsidian_capsule">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="bakery_obsidian_capsule">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card with-filling" data-category="pastry">
+                    <div class="menu-img">
+                        <img src="41.png" alt="Emerald Cube">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-title" data-key="bakery_emerald_cube_name">Emerald Cube</h3>
+                        <p class="menu-desc" data-key="bakery_emerald_cube_desc">
+                            Геометричний куб із листкового тіста. Всередині — щільний мус із церемоніальної матчі та шар білого шоколаду. Зверху прикрашений ідеальною лінією з фісташкового праліне та пилком сушеного лайма.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">170₴</div>
+                                <div class="product-controls" data-id="bakery_emerald_cube">
+                                    <button class="btn-add-to-cart" 
+                                            data-id="bakery_emerald_cube" 
+                                            data-name="Emerald Cube" 
+                                            data-price="170">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="bakery_emerald_cube">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="bakery_emerald_cube">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card with-filling" data-category="pastry">
+                    <div class="menu-img">
+                        <img src="42.png" alt="Amber Tear">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-title" data-key="bakery_amber_tear_name">Amber Tear</h3>
+                        <p class="menu-desc" data-key="bakery_amber_tear_desc">
+                            Тісто філо, що нагадує зім’ятий шовк, з начинкою із запеченої в бурбоні груші. На вершині застигла велика крапля прозорої карамелі з гілочкою чебрецю всередині, що виглядає як коштовний викопний бурштин.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">160₴</div>
+                                <div class="product-controls" data-id="bakery_amber_tear">
+                                    <button class="btn-add-to-cart" 
+                                            data-id="bakery_amber_tear" 
+                                            data-name="Amber Tear" 
+                                            data-price="160">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="bakery_amber_tear">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="bakery_amber_tear">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card with-filling" data-category="pastry">
+                    <div class="menu-img">
+                        <img src="43.png" alt="Velvet Phantom">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-title" data-key="bakery_velvet_phantom_name">Velvet Phantom</h3>
+                        <p class="menu-desc" data-key="bakery_velvet_phantom_desc">
+                            Тарталетка з какао-тіста з лавандовим курдом та чорничним мусом кольору ультрамарин. Зверху — одна ягода ожини, вкрита срібним кандурином, що створює ефект космічного об'єкта в темряві.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">140₴</div>
+                                <div class="product-controls" data-id="bakery_velvet_phantom">
+                                    <button class="btn-add-to-cart" 
+                                            data-id="bakery_velvet_phantom" 
+                                            data-name="Velvet Phantom" 
+                                            data-price="140">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="bakery_velvet_phantom">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="bakery_velvet_phantom">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card with-filling" data-category="pastry">
+                    <div class="menu-img">
+                        <img src="44.png" alt="Copper Cocoon">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-title" data-key="bakery_copper_cocoon_name">Copper Cocoon</h3>
+                        <p class="menu-desc" data-key="bakery_copper_cocoon_desc">
+                            Випічка, загорнута в нитки тіста катаїфі, обсмажені до мідного блиску. Всередині — заварний крем із копченою паприкою та в’яленим манго. Естетика дорогоцінного артефакту з димним присмаком.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">145₴</div>
+                                <div class="product-controls" data-id="bakery_copper_cocoon">
+                                    <button class="btn-add-to-cart" 
+                                            data-id="bakery_copper_cocoon" 
+                                            data-name="Copper Cocoon" 
+                                            data-price="145">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="bakery_copper_cocoon">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="bakery_copper_cocoon">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card with-filling" data-category="pastry">
+                    <div class="menu-img">
+                        <img src="45.png" alt="Scorched Cloud">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-title" data-key="bakery_scorched_cloud_name">Scorched Cloud</h3>
+                        <p class="menu-desc" data-key="bakery_scorched_cloud_desc">
+                            Сендвіч із двох дисків чорного печива та масивного шару маршмелоу з бергамотом. Краї білої піни обпалені до чорної карамелізованої сітки. Всередині захований рідкий центр із лимонного гелю.
+                        </p>
+                        <div class="menu-footer">
+                            <div class="menu-price-action">
+                                <div class="menu-price">130₴</div>
+                                <div class="product-controls" data-id="bakery_scorched_cloud">
+                                    <button class="btn-add-to-cart" 
+                                            data-id="bakery_scorched_cloud" 
+                                            data-name="Scorched Cloud" 
+                                            data-price="130">
+                                        <span data-key="add_btn">Додати</span>
+                                    </button>
+                                    <div class="quantity-selector" style="display: none;">
+                                        <button class="btn-minus" data-id="bakery_scorched_cloud">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </button>
+                                        <span class="qty-number">1</span>
+                                        <button class="btn-plus" data-id="bakery_scorched_cloud">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class = "container">
+            <div class = "footer-content" id = "about">
+                <div class = "footer-column">
+                    <h3 data-key="footer_about_h3">Про нас</h3>
+                        <p data-key="footer_about_text" style="color: var(--coffee-accent); margin-bottom: 20px;">Ми не просто готуємо каву, ми досліджуємо її потенціал. Кожне зерно в нашому закладі проходить ретельний відбір, від високогірних плантацій до вашої чашки. Завдяки точності в кожному проливі та професійному обладнанню, ми розкриваємо справжній профіль смаку: від шоколадних ноток Гватемали до фруктової яскравості Ефіопії. Наша місія — зробити преміальну каву доступною та зрозумілою для кожного.</p>                  <div class = "social-links">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-google-play"></i></a>
+                        <a href="#"><i class="fa-brands fa-app-store-ios"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3 data-key="footer_quick_links">Швидкі посилання</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-key="link_guides">Головна</a></li>
+                        <li><a href="#menu" data-key="link_recipes">Рецепти</a></li>
+                    </ul>
+                </div>
+
+                <div class = "footer-column" id = "contact">
+                    <h3 data-key="footer_contact_title">Зв'яжіться з нами</h3>
+                    <ul class = "footer-links">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Церковна+10+Чернівці" target="_blank" class="location-link" data-key="contact_address">Церковна, 10, Чернівці, 58000</a>
+                        </li>
+                        <li><i class="fa-solid fa-square-phone"></i>+380 95 213 7959</li>
+                        <li>
+                            <i class="fa-solid fa-envelope-open-text"></i>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sochykan.oleh.clg@chnu.edu.ua" target="_blank" class="email-link">sochykan.oleh.clg@chnu.edu.ua</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-clock"></i>
+                            <span class="work-time-row">
+                                <strong data-key="work_days">Понеділок - П'ятниця</strong>: 8:00 AM - 8:00 PM
+                            </span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-clock"></i>
+                            <span class="work-time-row">
+                                <strong data-key="work_sat">Субота</strong>: 9:00 AM - 6:00 PM
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright" data-key="copy">
+                    © 2026 Coffee4You Coffee Roasters. Всі права захищені.
+                </div>
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="ua">UA</button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-login">×</span> <h2 data-key="btn_login">Увійти</h2> 
+            <form id="loginForm" novalidate>
+                <div class="input-group" style="margin-bottom: 20px;">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required placeholder="your@gmail.com">
+                    <span class="error-text" data-key="error_email_login" style="color: #ff4d4d; font-size: 11px; display: none;">Введіть коректний Email</span>
+                </div>
+
+                <div class="input-group">
+                    <div class="label-row" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                        <label for="password" data-key="label_password">Пароль</label>
+                        <a href="#" class="forgot-link" data-key="link_forgot" style="font-size: 0.8rem; color: var(--coffee-accent); text-decoration: none;">Забули пароль?</a>
+                    </div>
+                    <input type="password" id="password" required placeholder="••••••••" style="width: 100%; padding: 12px; background: #2a2a2a; border: 1px solid #444; color: white; border-radius: 8px;">
+                    <span class="error-text" data-key="error_password_login" style="color: #ff4d4d; font-size: 11px; display: none;">Введіть пароль</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 20px;" data-key="btn_submit_login">Увійти</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-register">×</span>
+            <h2 data-key="btn_register">Реєстрація</h2> 
+            <form id="registerForm" novalidate>
+                <div class="input-group" style="margin-bottom: 15px;">
+                    <label for="reg-name" data-key="label_name">Ім'я</label>
+                    <input type="text" id="reg-name" required style="width: 100%; padding: 12px; background: #2a2a2a; border: 1px solid #444; color: white; border-radius: 8px;">
+                    <span class="error-text" data-key="error_required" style="display: none;">Обов'язкове поле</span>
+                </div>
+
+                <div class="input-group" style="margin-bottom: 15px;">
+                    <label data-key="label_surname">Прізвище</label>
+                    <input type="text" id="reg-surname" required style="width: 100%; padding: 12px; background: #2a2a2a; border: 1px solid #444; color: white; border-radius: 8px;">
+                    <span class="error-text" data-key="error_required" style="display: none;">Обов'язкове поле</span>
+                </div>
+
+                <div class="input-group" style="margin-bottom: 15px;">
+                    <label data-key="label_country">Країна</label>
+                    <select id="reg-country" required style="width: 100%; padding: 12px; background: #2a2a2a; border: 1px solid #444; color: white; border-radius: 8px;">
+                        <option value="" disabled selected data-key="country_select">Виберіть країну</option>
+                    </select>
+                    <span class="error-text" data-key="error_country" style="display: none;">Оберіть країну</span>
+                </div>
+
+                <div class="input-group" style="margin-bottom: 15px;">
+                    <label for="reg-email">Email</label>
+                    <input type="email" id="reg-email" required style="width: 100%; padding: 12px; background: #2a2a2a; border: 1px solid #444; color: white; border-radius: 8px;">
+                    <span class="error-text" data-key="error_email_invalid" style="color: #ff4d4d; font-size: 11px; display: none;">Некоректний Email</span>
+                </div>
+
+                <div class="input-group" style="margin-bottom: 25px;">
+                    <label for="reg-password" data-key="label_password">Пароль</label>
+                    <input type="password" id="reg-password" required style="width: 100%; padding: 12px; background: #2a2a2a; border: 1px solid #444; color: white; border-radius: 8px;">
+                    <span class="error-text" data-key="error_password_invalid" style="color: #ff4d4d; font-size: 11px; display: none;">Неправильний пароль</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;" data-key="btn_register">Зареєструватися</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content" style="max-width: 500px;">
+            <span class="close-modal" id="close-cart">×</span>
+            <h2 data-key="cart_title" style="margin-bottom: 20px;">Ваше замовлення</h2>
+            
+            <div id="cart-items-list" style="max-height: 400px; overflow-y: auto;">
+                <p style="text-align: center; color: #888;" data-key="cart_empty">Кошик порожній</p>
+            </div>
+
+            <div class="cart-actions" style="text-align: center; margin: 20px 0;">
+                <button id="clear-cart-btn" class="btn-clear" data-key="btn_clear_cart">
+                    <i class="fa-solid fa-trash-can"></i> Видалити все з кошика
+                </button>
+            </div>
+
+            <div class="cart-summary" style="border-top: 1px solid #444; padding-top: 20px; margin-top: 10px;">
+                <div style="display: flex; justify-content: space-between; font-size: 1.2rem; margin-bottom: 20px;">
+                    <span data-key="cart_total">Всього:</span>
+                    <strong id="cart-total-price">0₴</strong>
+                </div>
+                <button id="checkout-btn" class="btn btn-primary" data-key="btn_checkout" style="width: 100%;">Оформити замовлення</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="orderProcessingModal" class="modal">
+        <div class="modal-content processing-content">
+            <img src="Loading_icon.gif" alt="Loading..." class="loading-gif">
+            <p class="processing-text" data-key="processing_order_text"></p>
+        </div>
+    </div>
+
+    <div id="orderSuccessModal" class="modal">
+        <div class="modal-content success-content">
+            <span class="close-modal" id="close-success">&times;</span>
+            
+            <p class="success-status-title" data-key="order_status_title">Статус замовлення: ПІДТВЕРДЖЕНО</p>
+            <h2 class="brand-name-success">Coffee4You</h2>
+            
+            <div class="success-icon-sparkle">
+                <i class="fas fa-mug-hot"></i>
+            </div>
+
+            <hr class="success-divider">
+
+            <p class="success-msg" data-key="order_success_msg">Ваше замовлення успішно прийнято!</p>
+            <p class="success-status" data-key="order_status">Ми вже почали готувати вашу каву.</p>
+            
+            <button id="close-success-btn" class="btn gold-btn" data-key="btn_close_success">Смачного!</button>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
